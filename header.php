@@ -14,7 +14,7 @@
                     <a class="nav-link" href="#sobre-produto">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#frases-efeito">Frases de Efeito</a>
+                    <a class="nav-link" href="#frases-efeito">Seja parceiro</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#agendar-reuniao">Agendar Reunião</a>
