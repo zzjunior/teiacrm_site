@@ -39,12 +39,25 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2>WHATSVENDAS</h2>
-                    <p>Excelente para loja, MUITO FÁCIL para vendedor.</p>
+                    <h2>WHATSMOTOS</h2>
+                    <h6>Excelente para loja, MUITO FÁCIL para vendedor</h6>
                     <p class="h4 shadow-lg text-center" style="background-color:#0056b3">Receba leads +QUENTES 24horas por dia!</p>
+                    <a type="button" class="btn btn-primary rounded-5 w-100 mt-5 shadow-lg animate__animated animate__bounce border h6" href="https://teiacrm.com/wm/store/nr/1016" target="_blank" rel="noopener noreferrer">
+                    CLIQUE AQUI E VEJA NA PRÁTICA
+                    </a>
                 </div>
                 <div class="col-md-6">
-                    <img id="slogan-0" src="./images/slogan.svg" alt="" class="img-fluid" style="width:800px">
+                    <img id="slogan-0" src="./images/slogan.svg" alt="" class="img-fluid d-none animate__animated animate__bounceInRight" style="width:800px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                <img id="slogan-1" src="./images/Slogan2.svg" alt="" class="img-fluid animate__animated d-none animate__bounceInLeft animate__delay-2s 2s" style="width:800px;margin-top:-1.5rem;">
+                </div>
+                <div class="col-md-6">
+                    <h2>WHATSVENDAS</h2>
+                   Tenha a página de prospecção de Leads para sua Loja e Vendedores. <br>
+                   <p class="h5 shadow-lg text-center" style="background-color:#0056b3">Sem limitação de Produtos, sem limitação de Leads, sem limitação de Vendedores.</p>
                 </div>
             </div>
         </div>
@@ -60,7 +73,7 @@
                     </p>
                 </div>
                 <div class="col-md-4">
-                <img class="animate__animated animate__bounceInRight animate__delay-2s	2s" src="images/image-2.png" style="width: 200px; transform: rotate(10deg);" alt="celular_graficos">
+                <img class="animate__animated animate__bounceInRight animate__delay-2s 2s d-none" src="images/image-2.png" style="width: 200px; transform: rotate(10deg);" alt="celular_graficos">
             </div>
             </div>
         </div>
@@ -110,6 +123,34 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    var animatedElements = document.querySelectorAll('.animate__animated');
+
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function handleScroll() {
+        animatedElements.forEach(function (el) {
+            if (isElementInViewport(el)) {
+                el.classList.remove('d-none');
+            }
+        });
+        // Remova o evento de rolagem depois que todas as imagens forem exibidas para evitar repetição
+        window.removeEventListener('scroll', handleScroll);
+    }
+
+    // Adicione um evento de rolagem para verificar quando as imagens devem ser exibidas
+    window.addEventListener('scroll', handleScroll);
+});
+    </script>
 </body>
 
 </html>

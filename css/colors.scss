@@ -1,11 +1,12 @@
 /* cores da identidade visual do TEIA CRM */
-$verde-color: #00FF7F;
+$verde-color: #5fcc96;
 $azul-color: #4356A1;
 $azul2-color: #58ABDF;
 $azur3-color: #628DC7;
 $azul4-color: #2B53A0;
 $roxo-color: #5D54A0;
 $cinza-color: #696969;
+$red-color: #d12c2c;
 
 /* Class com cores */
 .teiacolor-0 {
@@ -32,3 +33,7 @@ span.teiacolor-0 {
 .cinza-text {
     color: $cinza-color;
 }
+.background-red {
+    background-color: $red-color;
+    /* border-radius: 5px; */
+} 

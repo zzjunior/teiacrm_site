@@ -4,9 +4,9 @@
     <section id="agendar-reuniao" class="container mt-5">
         <div class="row">
             <div class="col text-center">
-                <h2>Agende uma Reunião de Apresentação</h2>
-                <p>Preencha o formulário abaixo e entraremos em contato para agendar uma apresentação do nosso produto.</p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#agendarReuniaoModal">Agendar Reunião</button>
+                <h2>Agende uma Apresentação agora!</h2>
+                <p>Vamos entrar em contato com você para confirmar a apresentação.</p>
+                <button type="button" class="btn btn-primary animate__animated animate__bounce" data-bs-toggle="modal" data-bs-target="#agendarReuniaoModal">Agendar Reunião</button>
             </div>
         </div>
         <!-- Modal -->
