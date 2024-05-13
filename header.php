@@ -20,7 +20,7 @@
                     <a class="nav-link" href="#agendar-reuniao">Agendar Reunião</a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://teiacrm.com/login" target="_blank" class="nav-link" href="#Entrar-TEIA">Entrar</a>
+                    <a href="https://teiacrm.com/login" target="_blank" class="btn btn-primary-emphasis rounded-2 text-primary" href="#Entrar-TEIA">Entrar</a>
                 </li>
             </ul>
         </div>

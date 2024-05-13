@@ -25,25 +25,24 @@
     <section id="sobre-produto" class="container mt-5">
         <div class="row">
             <div class="col-md-8">
-                <h2 class="teiacolor-1">Teia CRM</h2>
-                <h5 class="teiacolor-1">Um captador de leads, acelerando processos de venda e muito mais!</h5>
-                <p class="cinza-text">
-                    O TEIA CRM (Costumer Relationship Management) é um software que vai auxiliar o vendedor a gerenciar o funil de vendas com os leads,
-                     fazendo o acompanhamento das etapas e os follow ups de vendas, além de gerar dados para a análise e o gerenciamento dos processos comerciais.
+                <h2 class="teiacolor-1">Um captador de leads, acelerando processos de venda e muito mais!</h2>
+                <p class="cinza-text fs-6">
+                Conheça a plataforma que tem ganhado lojas e concessionárias no Brasil com as melhores ferramentas de vendas!
+Simples, fácil de usar e feito pra te fazer vender mais!
                 </p>
             </div>
     </section>
 
     <!-- apresentação ferramentas -->
-    <section id="ferramentas-leads" class="container-fluid text-white py-5">
+    <section id="ferramentas-leads" class="container-fluid text-white py-5 mt-5">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <h2>WHATSMOTOS</h2>
                     <h6>Excelente para loja, MUITO FÁCIL para vendedor</h6>
                     <p class="h4 shadow-lg text-center" style="background-color:#0056b3">Receba leads +QUENTES 24horas por dia!</p>
-                    <a type="button" class="btn btn-primary rounded-5 w-100 mt-5 shadow-lg animate__animated animate__bounce border h6" href="https://teiacrm.com/wm/store/nr/1016" target="_blank" rel="noopener noreferrer">
-                    CLIQUE AQUI E VEJA NA PRÁTICA
+                    <a type="button" class="btn btn-danger rounded-5 w-100 mt-5 shadow-lg animate__animated animate__bounce fs-6 border border-dark-subtle" href="https://teiacrm.com/wm/store/nr/1016" target="_blank" rel="noopener noreferrer">
+                    CLIQUE E VEJA NA PRÁTICA
                     </a>
                 </div>
                 <div class="col-md-6">
@@ -63,14 +62,13 @@
         </div>
     </section>
 
-    <section id="ferramentas-crm" class="container-fluid text-white py-5">
+    <section id="ferramentas-crm" class="container-fluid teiacolor-1 py-5">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2>FÁCIL ACOMPANHAMENTO DE <strong class="teiacolor-0">LEADS</strong></h2>
+                    <h2>FÁCIL ACOMPANHAMENTO DE <strong class="teiacolor-0 border border-success-subtle">LEADS</strong></h2>
+                    <p class="text-dark fs-4">Receba & acompanhe leads 24horas por dia em tempo real!</p>
                     <p>...</p>
-                    <p class="h4">Receba
-                    </p>
                 </div>
                 <div class="col-md-4">
                 <img class="animate__animated animate__bounceInRight animate__delay-2s 2s d-none" src="images/image-2.png" style="width: 200px; transform: rotate(10deg);" alt="celular_graficos">
