@@ -4,9 +4,9 @@
 <section id="agendar-reuniao" class="container mt-5">
     <div class="row">
         <div class="col text-center">
-            <h2>Agende uma Apresentação agora!</h2>
+            <h2>Agende uma Demonstração agora!</h2>
             <p>Vamos entrar em contato com você para confirmar a apresentação.</p>
-            <button type="button" class="btn btn-primary animate__animated animate__bounce rounded-2" onclick="toggleForm()">Agendar Reunião</button>
+            <button type="button" class="btn btn-primary animate__animated animate__bounce rounded-2" onclick="toggleForm()">Agendar Demonstração</button>
         </div>
     </div>
     <div class="row" id="form-container" style="display:none;">

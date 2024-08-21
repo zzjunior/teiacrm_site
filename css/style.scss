@@ -11,6 +11,10 @@
     text-decoration: none;
 }
 
+.z-index-fixed {
+    z-index: 1030; /* Valor padrão do Bootstrap para elementos fixos */
+}
+
 .bg-dark {
     background-color: #343a40 !important;
     color: white;
@@ -52,6 +56,28 @@
 .nav-link:hover {
     color: #0056b3;
 }
+
+.fa-map-marker-alt {
+    font-size: 20px;
+    color: #FF0067;
+  }
+  #map {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    a {
+        color: transparent;
+        visibility: hidden;
+    }
+    @media screen and (max-width: 992px){
+        width: 100%;
+        height: 100%;
+    }
+  }
+  .map-marker {
+    position: relative;
+    transform: translate(-50%, -100%);
+  }
 
 
 

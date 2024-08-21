@@ -14,15 +14,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/colors.css">
+    <script src="countrymap/mapdata.js"></script>
+    <script src="countrymap/countrymap.js"></script>
 </head>
 
 <body>
-
+<header class="position-fixed top-0 start-0 w-100 z-index-fixed bg-white mb-3">
     <!-- Header -->
-    <?php include 'header.php'; ?>
-
+        <?php include 'header.php'; ?>
+    </header>
     <!-- Sobre o Produto -->
-    <section id="sobre-produto" class="container mt-5">
+    <section id="sobre-produto" class="container" style="margin-top: 8rem;">
         <div class="row">
             <div class="col-md-8">
                 <h2 class="teiacolor-1">Um captador de leads, acelerando processos de venda e muito mais!</h2>
@@ -31,6 +33,15 @@
 Simples, fácil de usar e feito pra te fazer vender mais!
                 </p>
             </div>
+            <div id="mapa-teia">
+                <!---mapa --->
+                <div class="container">
+                    <h1 class="text-center mt-5 teiacolor-4">Presente em +10 estados do Brasil!</h1>
+                    <div id="map">
+
+                    </div>
+                </div>
+         </div>
     </section>
 
     <!-- apresentação ferramentas -->
@@ -38,7 +49,7 @@ Simples, fácil de usar e feito pra te fazer vender mais!
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2>WHATSMOTOS</h2>
+                    <h2>WHATSMOTO</h2>
                     <h6>Excelente para loja, MUITO FÁCIL para vendedor</h6>
                     <p class="h4 shadow-lg text-center" style="background-color:#0056b3">Receba leads +QUENTES 24horas por dia!</p>
                     <a type="button" class="btn btn-danger rounded-5 w-100 mt-5 shadow-lg animate__animated animate__bounce fs-6 border border-dark-subtle" href="https://teiacrm.com/wm/store/nr/1016" target="_blank" rel="noopener noreferrer">
@@ -46,17 +57,17 @@ Simples, fácil de usar e feito pra te fazer vender mais!
                     </a>
                 </div>
                 <div class="col-md-6">
-                    <img id="slogan-0" src="./images/slogan.svg" alt="" class="img-fluid d-none animate__animated animate__bounceInRight" style="width:800px">
+                    <img id="slogan-0" src="./images/banners-site-TEIA.svg" alt="" class="img-fluid d-none animate__animated animate__bounceInRight" style="width:800px">
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                <img id="slogan-1" src="./images/Slogan2.svg" alt="" class="img-fluid animate__animated d-none animate__bounceInLeft animate__delay-2s 2s" style="width:800px;margin-top:-1.5rem;">
+                <div class="col-md-6 mt-5">
+                    <h2>WHATSVENDAS</h2>
+                   <p class="h5 shadow-lg text-center" style="background-color:#0056b3">Sem limitação de Produtos, Leads, ou usuários.</p>
+                   Tenha a página de prospecção de Leads para sua Loja e Vendedores.
                 </div>
                 <div class="col-md-6">
-                    <h2>WHATSVENDAS</h2>
-                   Tenha a página de prospecção de Leads para sua Loja e Vendedores. <br>
-                   <p class="h5 shadow-lg text-center" style="background-color:#0056b3">Sem limitação de Produtos, sem limitação de Leads, sem limitação de Vendedores.</p>
+                <img id="slogan-1" src="./images/Slogan2.svg" alt="" class="img-fluid animate__animated d-none animate__bounceInLeft animate__delay-2s 2s" style="width:800px;margin-top:-1.5rem;">
                 </div>
             </div>
         </div>
@@ -77,11 +88,10 @@ Simples, fácil de usar e feito pra te fazer vender mais!
         </div>
 
     </section>
+
     <!-- Chamativo para Agendar Reunião -->
         <?php include 'agendamento.php'; ?>
     </section>
-
-
 
 
     <article class="container-sm mt-5">
