@@ -17,7 +17,7 @@
                     <a class="nav-link" href="#frases-efeito">Seja parceiro</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#agendar-reuniao">Agendar Reunião</a>
+                    <a class="nav-link" href="#agendar-reuniao" onclick="toggleForm()">Agendar Reunião</a>
                 </li>
                 <li class="nav-item">
                     <a href="https://teiacrm.com/login" target="_blank" class="btn btn-primary-emphasis rounded-2 text-primary" href="#Entrar-TEIA">Acesse</a>

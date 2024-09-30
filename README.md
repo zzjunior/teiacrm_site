@@ -1,3 +1,3 @@
 # teiacrm_site
 
-Site institucional produto Saas TEIA CRM
+Site institucional do produto Saas TEIA CRM

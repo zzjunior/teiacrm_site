@@ -95,3 +95,12 @@
     width: 5%;
   }
 }
+
+#usam-aprovam {
+  align-items: center;
+  justify-content: center;
+
+  #text-usam {
+    margin-bottom: 10rem;
+  }
+}

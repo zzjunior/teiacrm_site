@@ -1,3 +1,5 @@
+<?php 
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -14,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="countrymap/mapdata.js"></script>
     <script src="countrymap/countrymap.js"></script>
 </head>
@@ -33,15 +36,48 @@
 Simples, fácil de usar e feito pra te fazer vender mais!
                 </p>
             </div>
-            <div id="mapa-teia">
-                <!---mapa --->
-                <div class="container">
-                    <h1 class="text-center mt-5 teiacolor-4">Presente em +10 estados do Brasil!</h1>
-                    <div id="map">
+            </div>
+            <div class="row mt-2">
+    <!---mapa --->
+    <div class="col-12 col-md-6" id="mapa-teia" class="container">
+        <h1 class="text-center mt-5 teiacolor-4">Presente em todos os estados do Brasil!</h1>
+        <div class="w-100" id="map"></div>
+    </div>
 
+    <div class="col-12 col-md-6 mt-5" id="usam-aprovam">
+        <?php include('usam.php') ?>
+        <h3 class="text-center teiacolor-1" id="text-usam">Usam e aprovam!</h3>
+        <div id="carouselUSAM" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <?php foreach ($usam as $id => $empresa): ?>
+                    <div class="carousel-item <?= ($id === 'potiguarhonda') ? 'active' : '' ?>">
+                        <article class="text-center">
+                        <i class="fa-solid fa-address-card h1"></i>
+                        <h5>nome do gestor</h5>
+                        <p>
+                            feedback do gestor
+                        </p>
+                        </article>
+                        <h5 class="text-center text-black-50">Cargo do gestor na <?= $empresa['nome'] ?></h5>
+                        <img src="<?= $empresa['logo'] ?>" class="d-block w-25 w-md-25 img-fluid" alt="<?= $empresa['nome'] ?>" style="display: inline-block; position: relative; left: 50%; transform: translateX(-50%);">
                     </div>
-                </div>
-         </div>
+                <?php endforeach; ?>
+            </div>
+            <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselUSAM" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carouselUSAM" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <a class="no-decoration" href="http://" target="_blank" rel="noopener noreferrer">
+            <h4 class="cinza-text text-center mt-5">Veja mais</h4>
+        </a>
+    </div>
+</div>
+
     </section>
 
     <!-- apresentação ferramentas -->
@@ -49,11 +85,11 @@ Simples, fácil de usar e feito pra te fazer vender mais!
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2>WHATSMOTO</h2>
+                    <h1 class="text-start"><img class="w-50 img-fluid" src="./images/WHATSMOTO.webp" alt=""></h1>
                     <h6>Excelente para loja, MUITO FÁCIL para vendedor</h6>
-                    <p class="h4 shadow-lg text-center" style="background-color:#0056b3">Receba leads +QUENTES 24horas por dia!</p>
+                    <p class="h4 shadow-lg text-center" style="background-color:#0056b3">Leads +QUENTES 24horas por dia!</p>
                     <a type="button" class="btn btn-danger rounded-5 w-100 mt-5 shadow-lg animate__animated animate__bounce fs-6 border border-dark-subtle" href="https://teiacrm.com/wm/store/nr/1016" target="_blank" rel="noopener noreferrer">
-                    CLIQUE E VEJA NA PRÁTICA
+                    <i class="fa-solid fa-computer-mouse"></i> CLIQUE E VEJA NA PRÁTICA
                     </a>
                 </div>
                 <div class="col-md-6">
@@ -62,9 +98,9 @@ Simples, fácil de usar e feito pra te fazer vender mais!
             </div>
             <div class="row">
                 <div class="col-md-6 mt-5">
-                    <h2>WHATSVENDAS</h2>
-                   <p class="h5 shadow-lg text-center" style="background-color:#0056b3">Sem limitação de Produtos, Leads, ou usuários.</p>
-                   Tenha a página de prospecção de Leads para sua Loja e Vendedores.
+                    <h1>WHATSVENDAS</h1>
+                   <p class="h5 shadow-lg text-center p-2" style="background-color:#0056b3">Sem limitação de Produtos, Leads, ou usuários.</p>
+                   Tenha um catalogo pronto para captação de Leads para sua Loja e Vendedores.
                 </div>
                 <div class="col-md-6">
                 <img id="slogan-1" src="./images/Slogan2.svg" alt="" class="img-fluid animate__animated d-none animate__bounceInLeft animate__delay-2s 2s" style="width:800px;margin-top:-1.5rem;">
@@ -77,16 +113,23 @@ Simples, fácil de usar e feito pra te fazer vender mais!
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h2>FÁCIL ACOMPANHAMENTO DE <strong class="teiacolor-0 border border-success-subtle">LEADS</strong></h2>
+                    <h2>FÁCIL ACOMPANHAMENTO DE <strong class="teiacolor-0">LEADS</strong></h2>
                     <p class="text-dark fs-4">Receba & acompanhe leads 24horas por dia em tempo real!</p>
-                    <p>...</p>
+                    <p>Com relatórios de acompanhamento por Loja, Equipes, e Vendedores.</p>
                 </div>
                 <div class="col-md-4">
                 <img class="animate__animated animate__bounceInRight animate__delay-2s 2s d-none" src="images/image-2.png" style="width: 200px; transform: rotate(10deg);" alt="celular_graficos">
             </div>
+            <div class="col-md-6">
+                <img class="animate__animated animate__bounceInRight animate__delay-2s 2s d-none border-bottom" src="images/PRODUTOS2.png" style="width: 250px; transform: rotate(10deg);" alt="celular_graficos2">
+            </div>
+            <div class="col">
+                    <h2 class="text-end">RELATÓRIOS EM TEMPO <b class="teiacolor-0">REAL!</b></h2>
+                    <p class="text-dark text-end fs-4">Acompanhe os status de cada venda atualizados no sistema em tempo real.</p>
+                    <p class="text-end">Relatórios de fontes de origem e campanhas de marketing, precisos e integrados as plataformas de anúncios.</p>
+                </div>
             </div>
         </div>
-
     </section>
 
     <!-- Chamativo para Agendar Reunião -->
@@ -95,28 +138,7 @@ Simples, fácil de usar e feito pra te fazer vender mais!
 
 
     <article class="container-sm mt-5">
-    <div>
-                <?php include('usam.php')?>
-                <h2 class="text-center teiacolor-1">Usam e aprovam!</h2>
-                <div id="carouselUSAM" class="carousel slide mt-5" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <?php foreach ($usam as $id => $empresa): ?>
-                            <div class="carousel-item <?= ($id === 'potiguarhonda') ? 'active' : '' ?>">
-                            <img src="<?= $empresa['logo'] ?>" class="d-block w-25 img-fluid" alt="<?= $empresa['nome'] ?>" style="display: inline-block;position: relative;left: 50%;transform: translateX(-50%);">
-                        </div>
-                        <?php endforeach; ?>
-                    </div>
-                    <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#carouselUSAM" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#carouselUSAM" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <a class="no-decoration" href="http://" target="_blank" rel="noopener noreferrer"><h4 class="cinza-text text-center mt-5">Veja mais</h4></a>
-         </div>
+
     </article>
 
     <!-- Footer -->
